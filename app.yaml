@@ -1,0 +1,9 @@
+name: janta-media-redesign
+region: nyc3
+static_sites:
+- name: janta-media-web
+  git:
+    branch: main
+    repo_clone_url: https://github.com/amrangaye/janta-media-ous-jarju.git
+  source_dir: /
+  output_dir: /
