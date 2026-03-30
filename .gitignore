@@ -1,0 +1,10 @@
+node_modules/
+stitch-assets/
+stitch_export/
+stitch_export.zip
+stitch_design.zip
+from client/
+.DS_Store
+*.mjs
+package.json
+package-lock.json

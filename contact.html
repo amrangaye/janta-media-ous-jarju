@@ -136,6 +136,41 @@
                         Send Message
                     </button>
                 </form>
+                <script>
+                    document.getElementById('contact-form').addEventListener('submit', function(e) {
+                        e.preventDefault();
+
+                        var name = document.getElementById('name').value.trim();
+                        var email = document.getElementById('email').value.trim();
+                        var phone = document.getElementById('phone').value.trim();
+                        var service = document.getElementById('service');
+                        var serviceText = service.options[service.selectedIndex].text;
+                        var org = document.getElementById('organization').value.trim();
+                        var message = document.getElementById('message').value.trim();
+
+                        var subject = 'Inquiry from ' + name;
+                        if (serviceText && serviceText !== 'Select a service...') {
+                            subject += ' — ' + serviceText;
+                        }
+
+                        var body = 'Hello JMCS Team,\n\n';
+                        body += message + '\n\n';
+                        body += '---\n';
+                        body += 'Name: ' + name + '\n';
+                        body += 'Email: ' + email + '\n';
+                        if (phone) body += 'Phone: ' + phone + '\n';
+                        if (org) body += 'Organization: ' + org + '\n';
+                        if (serviceText && serviceText !== 'Select a service...') {
+                            body += 'Service Interested In: ' + serviceText + '\n';
+                        }
+
+                        var mailto = 'mailto:info@jantamediacs.com'
+                            + '?subject=' + encodeURIComponent(subject)
+                            + '&body=' + encodeURIComponent(body);
+
+                        window.location.href = mailto;
+                    });
+                </script>
             </div>
         </div>
     </section>
