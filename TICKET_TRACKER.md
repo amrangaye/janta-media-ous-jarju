@@ -1,10 +1,28 @@
 # Janta Media — Ticket Tracker
 
-> Last updated: 2026-03-30 09:54 UTC
+> Last updated: 2026-03-30 10:41 UTC
 
 ## Summary
 
 All 8 GitHub issues for the Janta Media & Communications Services website have been **completed and closed**. Content sourced from client's `Janta Company Profile.pdf`.
+
+## PDF Page → Site Page Mapping
+
+| PDF Page | PDF Content | Site Page URL |
+|----------|-------------|---------------|
+| 1 | Cover — JMCS logo, tagline "Elevating Voices \| Building Bridges" | `index.html` (hero tagline, logo across all pages) |
+| 2 | "Who We Are" — company description, 20+ years | `index.html` (Who We Are section), `about.html` (Who We Are) |
+| 3 | Mission & Vision statements | `index.html` (Mission & Vision cards), `about.html` (Mission & Vision) |
+| 4 | The Challenge & Our Solution | `index.html` (Challenge/Solution section), `about.html` (Challenge/Solution) |
+| 5 | Services Overview — 6 services summary | `index.html` (services bento grid), `services.html` (hero + nav) |
+| 6 | Strategic Communications — detail + sub-services | `services.html#strategic-comms` |
+| 7 | Brand Development — detail + sub-services | `services.html#brand-dev` |
+| 8 | African Language Interpretation — detail + settings list | `services.html#interpretation` |
+| 9 | Multimedia Production — detail + sub-services | `services.html#multimedia` |
+| 10 | Audiovisual Support for Events — detail | `services.html#events` |
+| 11 | Cultural Competency Trainings — detail + sub-services | `services.html#trainings` |
+| — | Contact info (footer on all PDF pages) | `contact.html`, footer on all pages |
+| — | Team / leadership (implied from PDF authorship) | `team.html` |
 
 ## Issues
 
